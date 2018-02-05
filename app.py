@@ -1,4 +1,6 @@
-from flask import Flask
+from flask import Flask, render_template
+import random
+
 app = Flask(__name__)
 
 # Array random string
