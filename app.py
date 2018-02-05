@@ -13,8 +13,8 @@ array_strings = [
 
 @app.route("/")
 def index():
-    str = random.choice(array_strings)
-    return render_template('index.html', str=str)
+    param = random.choice(array_strings)
+    return render_template('index.html', param=param)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
